@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Interactive Web Page with JavaScript</h1>
+        <button id="theme-toggle" class="btn">
+          Switch to Dark Mode
+        </button>
+      </header>
+
+      <main>
+        <!-- Part 2: Interactive Feature 1 - Counter -->
+        <section class="card">
+          <h2>Click Counter</h2>
+          <p>How many times can you click?</p>
+          <div class="counter-box">
+            <span id="counter-value">0</span>
+          </div>
+          <button id="counter-btn" class="btn">
+            Click me
+          </button>
+        </section>
+
+        <!-- Part 2: Interactive Feature 2 - FAQ (Collapsible) -->
+        <section class="card">
+          <h2>FAQ Section</h2>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              What is this page about?
+            </button>
+            <p class="faq-answer">
+              This page shows how to use JavaScript events, DOM changes,
+              and form validation.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How does the FAQ work?
+            </button>
+            <p class="faq-answer">
+              When you click a question, JavaScript toggles the visibility
+              of the answer.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              Do I need to reload the page?
+            </button>
+            <p class="faq-answer">
+              No. Everything happens with JavaScript on this page.
+            </p>
+          </div>
+        </section>
+
+        <!-- Part 3: Form + Validation -->
+        <section class="card">
+          <h2>Sign Up Form</h2>
+          <p>All fields are validated with JavaScript.</p>
+
+          <!-- Success / error summary -->
+          <div id="form-message"></div>
+
+          <form id="signup-form" novalidate>
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input type="text" id="name" />
+              <small class="error-text"></small>
+            </div>
+
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" />
+              <small class="error-text"></small>
+            </div>
+
+            <div class="form-control">
+              <label for="password">Password</label>
+              <input type="password" id="password" />
+              <small class="error-text"></small>
+            </div>
+
+            <div class="form-control">
+              <label for="confirm-password">Confirm Password</label>
+              <input type="password" id="confirm-password" />
+              <small class="error-text"></small>
+            </div>
+
+            <div class="form-control">
+              <label for="message">Short message</label>
+              <textarea id="message" rows="3"></textarea>
+              <small class="error-text"></small>
+            </div>
+
+            <button type="submit" class="btn">
+              Submit
+            </button>
+          </form>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
